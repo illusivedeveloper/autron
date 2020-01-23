@@ -1,0 +1,90 @@
+<!DOCTYPE HTML>
+<!--
+	Autron 
+-->
+<html>
+	<head>
+		<title>Autron</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="{{ url_for('static', filename='assets/css/main.css') }}" />
+		<noscript><link rel="stylesheet" href="{{ url_for('static', filename='assets/css/noscript.css') }}" /></noscript>
+	</head>
+	<body class="homepage is-preload">
+		<div id="page-wrapper">
+
+			<!-- Header -->
+				<div id="header">
+
+					<!-- Inner -->
+						<div class="inner">
+							<header>
+								<h1><a href="{{ url_for('index') }}" id="logo">Autron</a></h1>
+								<hr />
+								<p>Smart Management Portal</p>
+							</header>
+							<footer>
+								<a href="#banner" class="button circled scrolly">Start</a>
+							</footer>
+						</div>
+
+					
+
+				</div>
+
+			<!-- Banner -->
+				<section id="banner">
+					<header>
+						<h2>Hi. You're looking at <strong>Autron Smart Portal</strong>.</h2>
+					</header>
+				</section>
+
+			<!-- Carousel -->
+				<section class="carousel">
+					<div class="reel">
+
+						<article>
+							<a href="{{ url_for('docker') }}" class="image featured"><img src="{{ url_for('static', filename='images/docker.png') }}" alt="" /></a>
+							<header>
+								<h3><a href="{{ url_for('docker') }}">Docker Management</a></h3>
+							</header>
+						</article>
+
+						<article>
+							<a href="{{ url_for('vnc') }}" class="image featured"><img src="{{ url_for('static', filename='images/tigervnc.png') }}" alt="" /></a>
+							<header>
+								<h3><a href="{{ url_for('vnc') }}">VNC-Server</a></h3>
+							</header>
+						</article>
+
+						<article>
+							<a href="{{ url_for('hadoop') }}" class="image featured"><img src="{{ url_for('static', filename='images/hadoop2.jpg') }}" alt="" /></a>
+							<header>
+								<h3><a href="{{ url_for('hadoop') }}">Hadoop Cluster Management</a></h3>
+							</header>
+						</article>
+
+						<article>
+							<a href="{{ url_for('shell') }}" class="image featured"><img src="{{ url_for('static', filename='images/terminal.jpeg') }}" alt="" /></a>
+							<header>
+								<h3><a href="{{ url_for('shell') }}">ShellinaBox</a></h3>
+							</header>
+						</article>
+
+				
+					</div>
+				</section>
+
+			
+		<!-- Scripts -->
+			<script src="{{ url_for('static', filename='assets/js/jquery.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.dropotron.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrolly.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/jquery.scrollex.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/browser.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/breakpoints.min.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/util.js') }}"></script>
+			<script src="{{ url_for('static', filename='assets/js/main.js') }}"></script>
+
+	</body>
+</html>
